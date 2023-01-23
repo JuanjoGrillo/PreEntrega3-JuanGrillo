@@ -1014,3 +1014,130 @@ footer p:nth-of-type(2) {
         flex-direction: column;
     }
 }
+
+/* CUPONES */
+
+.contenedor-puntos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contenedor-puntos__compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.contenedor-puntos-cupones h2,
+.contenedor-cupones p,
+.contenedor-puntos__compra p,
+.contenedor-puntos__usuario p {
+    text-align: center;
+}
+
+.contenedor-puntos__usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.contenedor-cupones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-cupones p {
+    max-width: 300px;
+}
+
+.contenedor-cupones__cupones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .contenedor-puntos {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contenedor-puntos__compra {
+        flex-direction: row;
+        margin-right: 2.5%;
+    }
+
+    .contenedor-puntos__usuario {
+        margin-left: 2.5%;
+    }
+
+    .contenedor-cupones__cupones {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .contenedor-puntos-cupones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contenedor-puntos-cupones__puntos {
+        margin-right: 2.5%;
+    }
+
+    .contenedor-puntos-cupones__cupones {
+        margin-left: 2.5%;
+    }
+
+}
+
+/* FORMULARIO REGISTRO */
+
+.contenedor-informacion-registro {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contenedor-informacion-registro__registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-informacion-registro__registro button {
+    width: 30%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .contenedor-informacion-registro {
+        flex-direction: row;
+        max-width: initial;
+        justify-content: center;
+    }
+
+    .contenedor-informacion-registro__registro {
+        width: 300px;
+        margin-left: 2.5%;
+    }
+
+    .contenedor-informacion-registro__informacion {
+        width: 300px;
+        margin-right: 2.5%;
+    }
+
+}
