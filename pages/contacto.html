@@ -10,21 +10,20 @@
 </head>
 <body>
     <!-- HEADER -->
-    <nav>
-        <img class="logo" src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg">
+    <header>
+      <nav>
+        <a class="logo-1-container" href="../index.html"><img class="logo logo-1" src="../assets/icons/logo.svg" alt="logo"></a>
+        <a class="logo-2-container" href="../index.html"><img class="logo logo-2" src="../assets/icons/logo2.svg" alt="logo"></a>
         <!-- nav desde los 600px -->
         <ul class="nav-opciones nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-opciones-a-1 nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-opciones-a-2 nav-link" href="./ofertas.html">Ofertas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-opciones-a-3 nav-link" href="./cupones.html">Cupones</a>
           </li>
         </ul>
         <div class="boton-navbar dropdown">
@@ -32,9 +31,9 @@
             <i class="fa-solid fa-bars"></i>
           </button>
           <ul class="boton-navbar__opciones options dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="./ofertas.html">Ofertas</a></li>
+            <li><a class="dropdown-item" href="./cupones.html">Cupones</a></li>
           </ul>
         </div>
         <div class="boton-usuario dropdown">
@@ -42,53 +41,55 @@
             <i class="fa-solid fa-user"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="./registro.html">Cambiar cuenta</a></li>
+            <li><a class="dropdown-item" href="./registro.html">Cerrar sesión</a></li>
           </ul>
         </div>
-    </nav>
+      </nav>
+    </header>
     <!-- REDES -->
+    <main>
     <section class="contacto-redes">
         <h2>Contactano por redes</h2>
         <div class="contacto-redes__redes">
             <div class="contacto-redes__redes-red">
-                <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="">
+                <a href="https://instagram.com"><img src="../assets/icons/instagram.svg" alt="red"></a>
                 <p>@GulaExpress</p>
             </div>
             <div class="contacto-redes-red">
-                <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="">
+              <a href="https://facebook.com"><img src="../assets/icons/facebook.svg" alt="red"></a>
                 <p>@GulaExpress</p>
             </div>
             <div class="contacto-redes-red">
-                <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="">
+              <a href="https://web.whatsapp.com"><img src="../assets/icons/wsp.svg" alt="red"></a>
                 <p>@GulaExpress</p>
             </div>
         </div>
     </section>
-    <!-- MENSAJE FORMULARIO -->
+    <!-- REGISTRO FORMULARIO -->
     <h2 class="titulo-mensaje-mail">Mandanos un mensaje</h2>
     <section class="contacto-mensaje-mail">
         <div class="texto-formulario-mail">
-            <p>Lorem ipsum doloret consectetur adipisicing elit. Culpibus! Ev</p>
-            <p>Lorem ipsum doloret consectetur adipisicing elit. Culpibus! Ev</p>
+            <p>Cualquier consulta que tengas, puedes enviarnos un mensaje para que valoremos tu situacion, y asi poder brindarte la mejor solución a tu problema.</p>
+            <p>Nuestros horarios de revision son de 8 a 19 hs de lunes a viernes</p>
         </div>
         <form class="formulario-mail">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
         </form>
     </section>
+  </main>
         <!-- FOOTER -->
         <footer>
             <p>Derechos reservados a @juanGrillo</p>

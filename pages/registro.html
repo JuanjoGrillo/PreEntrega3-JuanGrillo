@@ -10,22 +10,23 @@
 </head>
 <body>
     <!-- HEADER -->
-    <nav>
-        <img class="logo" src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg">
-        
+    <header>
+      <nav>
+        <a class="logo-1-container" href="../index.html"><img class="logo logo-1" src="../assets/icons/logo.svg" alt="logo"></a>
+        <a class="logo-2-container" href="../index.html"><img class="logo logo-2" src="../assets/icons/logo2.svg" alt="logo"></a>
         <!-- nav desde los 600px -->
         <ul class="nav-opciones nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-opciones-a-1 nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-opciones-a-2 nav-link" href="./ofertas.html">Ofertas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-opciones-a-3 nav-link" href="./cupones.html">Cupones</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-opciones-a-4 nav-link" href="./contacto.html">Contacto</a>
           </li>
         </ul>
         <div class="boton-navbar dropdown">
@@ -33,9 +34,10 @@
             <i class="fa-solid fa-bars"></i>
           </button>
           <ul class="boton-navbar__opciones options dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="./ofertas.html">Ofertas</a></li>
+            <li><a class="dropdown-item" href="./cupones.html">Cupones</a></li>
+            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
           </ul>
         </div>
         <div class="boton-usuario dropdown">
@@ -43,41 +45,41 @@
             <i class="fa-solid fa-user"></i>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="./registro.html">Cambiar cuenta</a></li>
+            <li><a class="dropdown-item" href="./registro.html">Cerrar sesión</a></li>
           </ul>
         </div>
-    </nav>
-    <!-- REGISTRO FORMULARIO -->
+      </nav>
+    </header>
+    <!-- MAIN -->
     <main class="contenedor-informacion-registro">
-        <div class="contenedor-informacion-registro__informacion">
-            <h2>Registrate para tener una mejor experiencia</h2>
-            <p>Teniendo una cuenta con nosotros vas a poder acceder a toda la información personalizada sobre los productos que mas te interesan, ademas de informacion relevante sobre la aplicación.</p>
-        </div>
-        <form class="contenedor-informacion-registro__registro">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Repetir contraseña</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <button type="button" class="btn btn-primary">Registrarse</button>
-        </form>
+      <div class="contenedor-informacion-registro__informacion">
+          <h2>Registrate para tener una mejor experiencia</h2>
+          <p>Teniendo una cuenta con nosotros vas a poder acceder a toda la información personalizada sobre los productos que mas te interesan, ademas de informacion relevante sobre la aplicación.</p>
+      </div>
+      <form class="contenedor-informacion-registro__registro">
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Maria Ana">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Hernandez">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="******">
+          </div>
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Repetir contraseña</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="******">
+          </div>
+          <button type="button" class="btn btn-primary">Registrarse</button>
+      </form>
     </main>
     <!-- FOOTER -->
     <footer>

@@ -10,72 +10,95 @@
 </head>
 <body>
     <!-- HEADER -->
-    <nav>
-        <img class="logo" src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg">
-        
+    <header>
+      <nav>
+        <a class="logo-1-container" href="../index.html"><img class="logo logo-1" src="../assets/icons/logo.svg" alt="logo"></a>
+        <a class="logo-2-container" href="../index.html"><img class="logo logo-2" src="../assets/icons/logo2.svg" alt="logo"></a>
         <!-- nav desde los 600px -->
         <ul class="nav-opciones nav">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-opciones-a-1 nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-opciones-a-2 nav-link" href="./ofertas.html">Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-opciones-a-4 nav-link" href="./contacto.html">Contacto</a>
+          </li>
         </ul>
         <div class="boton-navbar dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="boton-navbar__opciones options dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          </button>
+          <ul class="boton-navbar__opciones options dropdown-menu">
+            <li><a class="dropdown-item" href="./tienda.html">Tienda</a></li>
+            <li><a class="dropdown-item" href="./ofertas.html">Ofertas</a></li>
+         
+            <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+          </ul>
         </div>
         <div class="boton-usuario dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-user"></i>
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./registro.html">Cambiar cuenta</a></li>
+            <li><a class="dropdown-item" href="./registro.html">Cerrar sesión</a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+    </header>
     <!-- MAIN -->
-    <main class="contenedor-puntos-cupones">
-        <section class="contenedor-puntos-cupones__puntos">
-            <h2>Conseguí puntos para comprar</h2>
-            <div class="contenedor-puntos">
-                <div class="contenedor-puntos__compra">
-                    <p>Cuando realices cualquier compra por nuestra app online obtendrás puntos canjeables</p>
-                    <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="puntos">
+    
+    <section class="contenedor-puntos-cupones__puntos">
+      <h2>Conseguí puntos para comprar</h2>
+      <div class="contenedor-puntos">
+        <div class="contenedor-puntos__compra">
+          <p>Cuando realices cualquier compra por nuestra app online obtendrás puntos canjeables</p>
+          <div class="contenedor-puntos__compra-img">
+            <p>Compra realizada!</p>
+            <img src="../assets/icons/compra-realizada.svg" alt="compra">
+            <p>500pts</p>
+          </div>
+        </div>
+        <div class="contenedor-puntos__usuario">
+          <p>Esos puntos canjeables apareceran en tu perfil</p>
+          <img src="../assets/icons/usuario-puntos.svg" alt="puntos" aria-label="puntos">
+        </div>
+      </div>
+    </section>
+    <section class="contenedor-puntos-cupones__cupones">
+        <h2>Conseguí cupones para obtener descuentos</h2>
+        <div class="contenedor-cupones">
+            <p>Genera los cupones desde tu cuenta en nuestra app</p>
+            <div class="contenedor-cupones__cupones">
+              <div class="cupon-numero-3">
+                <img class="cupon-numero-3-img" src="../assets/icons/cupon.svg" alt="puntos">
+                <div class="spinner-imagen">
+                  <div class=" spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                  </div>
                 </div>
-                <div class="contenedor-puntos__usuario">
-                    <p>Cuando realices cualquier compra por nuestra app online obtendrás puntos canjeables</p>
-                    <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="puntos">
+              </div>
+              <div class="cupon-numero-3">
+                <img class="cupon-numero-3-img" src="../assets/icons/cupon.svg" alt="puntos">
+                <div class="spinner-imagen">
+                  <div class=" spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                  </div>
                 </div>
+              </div>
+              <div class="cupon-numero-3">
+                <img class="cupon-numero-3-img" src="../assets/icons/cupon.svg" alt="puntos">
+                <div class="spinner-imagen">
+                  <div class=" spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="contenedor-puntos-cupones__cupones">
-            <h2>Conseguí cupones para obtener descuentos</h2>
-            <div class="contenedor-cupones">
-                <p>Cuando realices cualquier compra por nuestra app online obtendrás puntos canjeables</p>
-                <div class="contenedor-cupones__cupones">
-                    <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="puntos">
-                    <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="puntos">
-                    <img src="../assets/icons/reshot-icon-abstract-figure-ZTPS2VNQLW.svg" alt="puntos">
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
