@@ -1,0 +1,290 @@
+.ofertas-diarias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ofertas-diarias p {
+    text-align: center;
+}
+
+.ofertas-diarias__ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas-diarias__oferta {
+    align-items: center;
+    justify-content: center;
+}
+
+.ofertas-diarias__oferta p {
+    margin: 1rem 10%;
+    text-align: center;
+}
+
+.ofertas-diarias__oferta:nth-last-of-type(2) p{
+    order: 2;
+}
+
+.oferta-diaria-extra {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .ofertas-diarias {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ofertas-diarias p {
+        margin-right: 2.5%;
+    }
+
+    .ofertas-diarias__ofertas {
+        margin-left: 2.5%;
+    }
+    
+    .ofertas-diarias__oferta:nth-last-of-type(2) i{
+        order: 2;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .ofertas-diarias {
+        flex-direction: column;
+    }
+
+    .ofertas-diarias__ofertas {
+        flex-direction: row;
+    }
+
+    .ofertas-diarias__oferta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ofertas-diarias__oferta p {
+        order: 2;
+    }
+
+    .ofertas-diarias__oferta:nth-of-type(2) i {
+        order: 1;
+    }
+
+}
+
+.ofertas-semanales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas-semanales p {
+    text-align: center;
+}
+
+.ofertas-semanales__ofertas {
+    display: flex;
+    flex-direction: column;
+}
+
+.ofertas-semanales__oferta {
+    display: flex;
+    align-items: center;
+}
+
+.ofertas-semanales__oferta p {
+    text-align: center;
+}
+
+.oferta-semanal-extra {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .ofertas-semanales {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ofertas-semanales p {
+        order: 3;
+        margin-right: 2.5%;
+    }
+
+    .ofertas-semanales__ofertas {
+        margin-left: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .ofertas-semanales {
+        flex-direction: column;
+    }
+
+    .ofertas-semanales__ofertas {
+        order: 3;
+        flex-direction: row;
+    }
+
+    .ofertas-semanales__oferta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ofertas-semanales__oferta p {
+        order: 2;
+    }
+
+}
+
+.ofertas-locales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas-locales__ofertas {
+    display: flex;
+    flex-direction: column;
+}
+
+.ofertas-locales__oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ofertas-locales__oferta i {
+    width: 50%;
+}
+
+.ofertas-locales__oferta p {
+    text-align: center;
+}
+
+.oferta-local-extra {
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .ofertas-locales__ofertas {
+        flex-direction: row;
+        margin: 0 2.5%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .oferta-local-extra {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.ofertas-diarias {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.ofertas-semanales {
+    margin-bottom: 3rem;
+}
+
+.ofertas-locales {
+    margin-bottom: 3rem;
+}
+
+
+@media only screen and (min-width: 720px) {
+    .ofertas-diarias {
+        margin-bottom: 7rem;
+    }
+
+    .ofertas-semanales {
+        margin-bottom: 7rem;
+    }
+
+    .ofertas-locales {
+        margin-bottom: 7rem;
+    }
+}
+
+.ofertas-locales > p {
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.ofertas-semanales > p {
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.ofertas-diarias > p {
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.ofertas-locales * {
+    font-size: 1.6rem;
+}
+
+.ofertas-semanales * {
+    font-size: 1.6rem;
+}
+
+.ofertas-diarias * {
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 1024px) {
+ 
+    .ofertas-locales > p {
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    .ofertas-semanales > p {
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    .ofertas-diarias > p {
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .ofertas-locales * {
+        font-size: 2rem;
+    }
+
+    .ofertas-semanales * {
+        font-size: 2rem;
+    }
+
+    .ofertas-diarias * {
+        font-size: 2rem;
+    }   
+}
+
+main i {
+    margin: 1rem;
+    transform: scale(2);
+}
+
+.ofertas-locales__oferta i {
+    width: fit-content;
+}

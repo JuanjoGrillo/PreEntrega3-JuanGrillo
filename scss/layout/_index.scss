@@ -1,0 +1,226 @@
+.busqueda_tienda_titulo {
+    margin: 2rem auto;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.tienda h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px) {
+   
+    .tienda__hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tienda__hero img {
+        border: none;  
+        border-radius: 0; 
+    }
+
+    .tienda__hero div {
+        margin-top: 0.4rem;
+    }
+
+
+    .tienda__hero div p:nth-of-type(3) {
+        margin-bottom: 0;
+    }
+    .tienda__categorias {
+        display: flex;
+        flex-direction: column;
+    }
+    .tienda__busqueda {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tienda > * {
+    margin-bottom: 2rem;
+}
+
+.tienda__busqueda {
+    font-size: 1.6rem;
+    display: flex;
+}
+.tienda__busqueda img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 25rem;
+
+}
+
+.tienda__busqueda p {
+    width: 40%;
+}
+.tienda__categorias {
+    font-size: 1.6rem;
+    display: flex;
+}
+.tienda__categorias p {
+    width: 40%;
+}
+.tienda__categorias img {
+    margin-bottom: 1rem;
+    order: 3;
+    width: 100%;
+    height: 25rem;
+}
+
+.tienda__hero {
+    font-size: 1.6rem;
+    display: flex;
+}    
+
+.tienda__hero img {
+    width: 100%;
+    height: 25rem;
+} 
+ 
+@media only screen and (min-width: 320px) {
+    .comentarios-container {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    .comentarios-container p {
+        margin-top: 10%;
+    }
+    .tienda__hero {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tienda__hero img {
+        width: 100%;
+
+    }
+    .tienda__busqueda {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tienda__busqueda img {
+        width: 100%;
+
+    }
+    .tienda__categorias {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tienda__categorias img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 450px) {
+    .comentarios-container {
+        position: absolute;
+        margin-left: calc(50% - 20rem);
+        margin-top: 10%;
+    }
+    .comentarios-container p {
+        margin-top: 10%;
+    }
+    .tienda__busqueda {
+        width: 100%;
+        
+    }
+    .tienda__busqueda img {
+        width: 40rem;
+        margin-left: calc(50% - 20rem);
+
+    }
+    .tienda__busqueda p {
+        width: 40rem;
+        margin: 0 auto;
+    }
+    .tienda__categorias {
+        width: 100%;
+    }    
+    .tienda__categorias p {
+        width: 40rem;
+        margin: 0 auto;
+    }
+    .tienda__categorias img {
+        width: 40rem;
+        margin-left: calc(50% - 20rem);
+    }    
+    .tienda__hero {
+        width: 100%;
+
+    }
+    .tienda__hero img {
+        width: 40rem;
+        margin-left: calc(50% - 20rem);
+        
+    }
+}    
+
+@media only screen and (min-width: 620px) {
+    .tienda__busqueda {
+        align-items: center;
+        flex-direction: row;
+        
+    }
+    .tienda__busqueda img {
+        margin: 0 auto;
+    
+    }
+    .tienda__busqueda p {
+        margin: 0 auto;
+        width: 20rem;
+    
+    }
+    .tienda__categorias {
+        align-items: center;
+        flex-direction: row;
+
+    }
+    .tienda__categorias p {
+        margin: 0 auto;
+        width: 20rem;
+
+    }
+    .tienda__categorias img {
+        margin: 0 auto;
+    }
+    .tienda__hero {
+        align-items: center;
+        flex-direction: row;
+    }
+    .tienda__hero img {
+        order: 2;
+        margin: 0 auto;
+    }
+    
+    .comentarios-container {
+        position: initial;
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    
+    
+}
+@media only screen and (min-width: 320px) and (max-width: 619px) {
+    .comentarios-container p {
+        background-color: rgba(255, 255, 255, 0.493);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        padding: 0 0.5rem;
+    }    
+}    
+
+// CUPONES
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-puntos-cupones__cupones {
+        margin-left: 2.5%;
+    }
+.contenedor-puntos-cupones__puntos {
+    margin-right: 2.5%;
+}
+}

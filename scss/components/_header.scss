@@ -1,0 +1,212 @@
+// @import '../base/vars';
+// @import '../base/reset';
+// @import '../base/animations';
+
+header {
+    background-color: red;
+    padding-bottom: 2rem;
+    box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.452);
+}
+.logo {
+    margin-left: 20px;
+}
+.logo-1 {
+    display: none;
+    margin-top: 2rem;
+}
+
+.logo-2 {
+    margin-top: 2rem;
+    z-index: 999999999999999999;
+}
+@media only screen and (min-width: 320px) {
+    
+    .logo-1 {
+        display: initial;
+    }
+    
+    .logo-2 {
+        display: none;
+    }
+    
+}
+.logo-2-container {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 3000ms;
+    z-index: 999999999999999999;
+
+}
+.logo-1-container {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 3000ms;
+    z-index: 999999999999999999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+/* titulos de secciones en el index */
+.section-title {
+    background-color: rgb(255, 0, 0);
+    margin: 2rem 0;
+    box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.452);
+    text-align: center;
+}
+.section-title a{
+    font-size: 3rem ;
+    color: white;
+    text-decoration: none;
+}
+
+
+.section-title a:hover {
+    color: white;
+    text-decoration: none;
+
+}
+.section-title a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+.nav-opciones li a {
+    color: white;
+    text-decoration: none;
+
+}
+.nav-opciones li a:hover {
+    color: white;
+    text-decoration: none;
+
+}
+.nav-opciones li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+.nav-opciones {
+    display: none;
+}
+
+@media only screen and (min-width: 780px) {
+    
+    .nav-opciones li a {
+        font-size: 2rem;
+    }
+    
+}
+
+
+.nav-opciones-a-1 {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 3500ms;
+}
+
+.nav-opciones-a-2 {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 4000ms;
+    
+}
+
+.nav-opciones-a-3 {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 4500ms;
+    
+}
+
+.nav-opciones-a-4 {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 5000ms;
+    
+}
+
+
+.boton-navbar {
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 3500ms;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.boton-navbar button {
+    border-color: black;    
+    background-color: rgb(0, 0, 0);
+}
+
+.boton-usuario {
+    margin-top: 2rem;
+    margin-right: 20px;
+    animation-name: deslizarHaciaAbajo;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    animation-duration: 4000ms;
+}
+
+.boton-usuario button {
+    border-color: black;    
+    background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .boton-navbar {
+        display: none;
+        margin-top: 2rem;
+    }
+    
+    .boton-usuario {
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+    
+    .nav-opciones {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 1%;
+        margin-top: 2rem;
+    }
+    
+}
+
+
+.boton-navbar__opciones {
+    border-top: none;
+    background-color: rgb(255, 0, 0);
+    width: 100vw;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.boton-navbar__opciones li a {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .boton-usuario {
+        animation-name: deslizarHaciaAbajo;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        animation-duration: 5500ms;
+    }
+}

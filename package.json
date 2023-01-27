@@ -1,0 +1,23 @@
+{
+  "name": "gula-express",
+  "version": "1.0.0",
+  "description": "Una App de comida online (Trabajo práctico de Coderhouse).",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanjoGrillo/PreEntrega2-JuanGrillo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanjoGrillo/PreEntrega2-JuanGrillo/issues"
+  },
+  "homepage": "https://github.com/JuanjoGrillo/PreEntrega2-JuanGrillo#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
