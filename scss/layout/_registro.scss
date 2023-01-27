@@ -3,13 +3,26 @@
     flex-direction: column;
     max-width: 300px;
     margin: 0 auto;
+    &__registro {
+        display: flex;
+        flex-direction: column;
+        button {
+            font-size: 2rem;
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+    &__informacion {
+        h2 {
+        text-decoration: underline;
+        font-size: 2rem;
+        margin-bottom: 2rem;    
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+    }
 }
-
-.contenedor-informacion-registro__registro {
-    display: flex;
-    flex-direction: column;
-}
-
 
 @media only screen and (min-width: 700px) {
 
@@ -29,22 +42,6 @@
         margin-right: 2.5%;
     }
 
-}
-
-.contenedor-informacion-registro__informacion h2 {
-    text-decoration: underline;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contenedor-informacion-registro__informacion p {
-    margin-bottom: 2rem;
-}
-
-.contenedor-informacion-registro__registro button {
-    font-size: 2rem;
-    width: 30%;
-    margin: 0 auto;
 }
 
 @media only screen and (min-width: 1024px){

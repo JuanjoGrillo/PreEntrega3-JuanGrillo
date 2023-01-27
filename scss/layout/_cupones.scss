@@ -1,13 +1,13 @@
 .contenedor-puntos-cupones__puntos {
     margin-left: 3rem;
     margin-bottom: 5rem;
-}
-
-.contenedor-puntos-cupones__puntos h2 {
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
 }
 
 .contenedor-puntos {
@@ -22,10 +22,10 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
-}
-
-.contenedor-puntos__compra p {
-    text-align: center;
+    
+    p {
+        text-align: center;
+    }
 }
 
 .contenedor-puntos__compra-img {
@@ -33,40 +33,49 @@
     padding: 1rem;
     color: white;
     border-radius: 1rem;
+    
+    p {
+        width: fit-content;
+    }
 }
 
-.contenedor-puntos__compra-img p {
-    width: fit-content;
-}
 .contenedor-puntos__usuario {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
-}
 
-.contenedor-puntos__usuario p {
-    text-align: center;
+    p {
+        text-align: center;
+    }
 }
 
 .contenedor-cupones {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p {
+        max-width: 300px;
+        text-align: center;
+    }
 }
 
-.contenedor-cupones p {
-    max-width: 300px;
-    text-align: center;
-}
 .contenedor-cupones__cupones {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    img {
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
 }
+
 .cupon-numero-3 {
     position: relative;
 }
+
 .cupon-numero-3-img {
     animation-name: esconderYMostrar;
     animation-delay: 0ms;
@@ -88,51 +97,40 @@
 
 .contenedor-puntos__puntos {
     width: 50%;
+    
+    h2 {
+        text-align: center;
+    }
 }
-
-.contenedor-puntos-cupones h2 {
-    text-align: center;
-}
-
-
-
-
 
 .contenedor-puntos-cupones__cupones {
     margin-bottom: 5rem;
-
+    
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 6rem;
+    }
 }
-
-
-.contenedor-puntos-cupones__cupones h2 {
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
 
 .usuario-puntos-img {
     border-radius: 1rem;
 }
 
-.contenedor-cupones__cupones img {
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
 @media only screen and (min-width: 600px) {
 
     .contenedor-puntos {
         flex-direction: row;
         justify-content: center;
-    }
-
-    .contenedor-puntos__compra {
-        flex-direction: row;
-        margin-right: 2.5%;
-    }
-
-    .contenedor-puntos__usuario {
-        margin-left: 2.5%;
+        
+        &__compra {
+            flex-direction: row;
+            margin-right: 2.5%;
+        }
+        
+        &__usuario {
+            margin-left: 2.5%;
+        }
     }
 
     .contenedor-cupones__cupones {
@@ -154,5 +152,3 @@
     }
 
 }
-
-
