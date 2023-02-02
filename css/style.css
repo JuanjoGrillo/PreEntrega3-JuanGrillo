@@ -1039,34 +1039,3 @@ article img {
   text-decoration: underline;
   width: fit-content;
   margin: 2.5rem auto 5rem; }
-
-.container {
-  display: flex;
-  justify-content: space-around; }
-
-.item {
-  background-color: gold; }
-
-.n1, .n3 {
-  width: 20rem;
-  height: 20rem; }
-
-.n2 {
-  width: 15rem;
-  height: 15rem; }
-
-.n4 {
-  width: 30rem;
-  height: 10rem; }
-
-.caja-tomato {
-  background-color: tomato; }
-
-.caja-navy {
-  background-color: navy; }
-
-.caja-leaf {
-  background-color: #619748; }
-
-.caja-orange {
-  background-color: orange; }
