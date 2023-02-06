@@ -49,18 +49,10 @@ nav {
     
 }
 
-/* titulos de secciones en el index */
-
-// .nav-opciones li a:visited{
-//     color: white;
-//     text-decoration: none;
-// }
-
-
 .nav-opciones {
     display: none;
     
-    & li a:visited{
+    li a:visited{
         color: white;
         text-decoration: none;
     }
@@ -74,44 +66,27 @@ nav {
     
 }
 
-
 .nav-opciones-a-1 {
-    animation-name: deslizarHaciaAbajo;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    animation-duration: 3500ms;
+    @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 3500ms);
 }
 
 .nav-opciones-a-2 {
-    animation-name: deslizarHaciaAbajo;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    animation-duration: 4000ms;
+    @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 4000ms);
     
 }
 
 .nav-opciones-a-3 {
-    animation-name: deslizarHaciaAbajo;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    animation-duration: 4500ms;
+    @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 4500ms);
     
 }
 
 .nav-opciones-a-4 {
-    animation-name: deslizarHaciaAbajo;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    animation-duration: 5000ms;
-    
+    @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 5000ms);
 }
 
 
 .boton-navbar {
-    animation-name: deslizarHaciaAbajo;
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    animation-duration: 3500ms;
+    @extend .nav-opciones-a-1;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: 10px;

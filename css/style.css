@@ -32,6 +32,14 @@ h6 {
   100% {
     transform: translateY(0px); } }
 
+.categoria-imagen-1, .categoria-imagen-2, .categoria-imagen-3, .categoria-imagen-4, .categoria-imagen-5, .categoria-imagen-6 {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 300px;
+  max-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -95,7 +103,6 @@ nav {
   .logo-2 {
     display: none; } }
 
-/* titulos de secciones en el index */
 .nav-opciones {
   display: none; }
   .nav-opciones li a:visited {
@@ -106,7 +113,7 @@ nav {
   .nav-opciones li a {
     font-size: 2rem; } }
 
-.nav-opciones-a-1 {
+.nav-opciones-a-1, .boton-navbar {
   animation-name: deslizarHaciaAbajo;
   animation-delay: 0ms;
   animation-iteration-count: 1;
@@ -131,10 +138,6 @@ nav {
   animation-duration: 5000ms; }
 
 .boton-navbar {
-  animation-name: deslizarHaciaAbajo;
-  animation-delay: 0ms;
-  animation-iteration-count: 1;
-  animation-duration: 3500ms;
   margin-top: 2rem;
   margin-left: auto;
   margin-right: 10px; }
@@ -350,6 +353,24 @@ nav {
     margin-left: 2.5%; }
   .contenedor-puntos-cupones__puntos {
     margin-right: 2.5%; } }
+
+.titulo-de-tienda {
+  background-color: tomato; }
+
+.titulo-de-ofertas {
+  background-color: rgba(152, 77, 182, 0.781); }
+
+.titulo-de-cupones {
+  background-color: rgba(0, 128, 0, 0.815); }
+
+.titulo-de-redes {
+  background-color: rgba(0, 116, 145, 0.815); }
+
+.titulo-de-atencion {
+  background-color: rgba(77, 63, 206, 0.685); }
+
+.titulo-de-registro {
+  background-color: rgba(255, 107, 230, 0.877); }
 
 .contacto-redes__redes {
   display: flex;
@@ -798,54 +819,23 @@ main i {
   .categorias-tienda-contenedor > div {
     justify-content: center; }
 
-.categoria-imagen {
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 300px;
-  max-height: 300px;
-  background-image: url("../assets/imgs/categoria.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .categoria-imagen-2 {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .categoria-imagen-3 {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria-3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .categoria-imagen-4 {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria-4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .categoria-imagen-5 {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria-5.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .categoria-imagen-6 {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria-6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
+.categoria-imagen-1 {
+  background-image: url("../assets/imgs/categoria.jpg"); }
+
+.categoria-imagen-2 {
+  background-image: url("../assets/imgs/categoria-2.jpg"); }
+
+.categoria-imagen-3 {
+  background-image: url("../assets/imgs/categoria-3.jpg"); }
+
+.categoria-imagen-4 {
+  background-image: url("../assets/imgs/categoria-4.jpg"); }
+
+.categoria-imagen-5 {
+  background-image: url("../assets/imgs/categoria-5.jpg"); }
+
+.categoria-imagen-6 {
+  background-image: url("../assets/imgs/categoria-6.jpg"); }
 
 .tienda-contenedor {
   display: flex;

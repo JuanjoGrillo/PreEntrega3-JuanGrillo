@@ -76,57 +76,29 @@
 }
 
 .categoria-imagen {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 300px;
-    max-height: 300px;
-    background-image: url("../assets/imgs/categoria.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    &-1 {
+        @extend %caja-de-categorias;
+        background-image: url("../assets/imgs/categoria.jpg") ;
+    }
     &-2 {
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 300px;
+        @extend %caja-de-categorias;
         background-image: url("../assets/imgs/categoria-2.jpg") ;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     &-3 {
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 300px;
+        @extend %caja-de-categorias;
         background-image: url("../assets/imgs/categoria-3.jpg") ;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     &-4 {
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 300px;
+        @extend %caja-de-categorias;
         background-image: url("../assets/imgs/categoria-4.jpg") ;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     &-5 {
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 300px;
+        @extend %caja-de-categorias;
         background-image: url("../assets/imgs/categoria-5.jpg") ;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
     &-6 {
-        min-width: 100px;
-        min-height: 100px;
-        max-width: 300px;
-        max-height: 300px;
+        @extend %caja-de-categorias;
         background-image: url("../assets/imgs/categoria-6.jpg") ;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
        
 }

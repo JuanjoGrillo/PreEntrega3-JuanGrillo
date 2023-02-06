@@ -240,3 +240,9 @@
         margin-right: 2.5%;
 }
 }
+
+@each $seccion, $color in $bg-titulos {
+    .titulo-de-#{$seccion} {
+        background-color: $color;
+    }
+}
