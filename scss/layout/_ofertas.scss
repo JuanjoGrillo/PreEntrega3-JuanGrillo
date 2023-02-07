@@ -5,11 +5,10 @@
     margin-bottom: 3rem;
     margin-top: 5rem;
     & * {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     & > p {
         text-decoration: underline;
-        font-size: 2rem;
         margin-bottom: 4rem;
     }
     p {
@@ -81,11 +80,10 @@
     flex-direction: column;
     align-items: center;
     & * {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     & > p {
         text-decoration: underline;
-        font-size: 2rem;
         margin-bottom: 4rem;
     }
     p {
@@ -147,11 +145,10 @@
     flex-direction: column;
     align-items: center;
     & * {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     & > p {
         text-decoration: underline;
-        font-size: 2rem;
         margin-bottom: 4rem;
     }
     &__ofertas {
@@ -206,31 +203,13 @@
 
 @media only screen and (min-width: 1024px) {
  
-    .ofertas-locales > p {
-        text-decoration: underline;
-        font-size: 3rem;
-        margin-bottom: 4rem;
-    }
-    .ofertas-semanales > p {
-        text-decoration: underline;
-        font-size: 3rem;
-        margin-bottom: 4rem;
-    }
-    .ofertas-diarias > p {
+    .ofertas-locales > p, .ofertas-semanales > p, .ofertas-diarias > p {
         text-decoration: underline;
         font-size: 3rem;
         margin-bottom: 4rem;
     }
     
-    .ofertas-locales * {
-        font-size: 2rem;
-    }
-
-    .ofertas-semanales * {
-        font-size: 2rem;
-    }
-
-    .ofertas-diarias * {
+    .ofertas-locales *, .ofertas-semanales *, .ofertas-diarias * {
         font-size: 2rem;
     }   
 }

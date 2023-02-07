@@ -4,20 +4,10 @@
     box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.452);
     text-align: center;
 
-    a {
+    a, a:hover, a:visited {
         font-size: 3rem ;
         color: white;
         text-decoration: none;
-    }
-    a:hover {
-        color: white;
-        text-decoration: none;
-    
-    }
-    a:visited {
-        color: white;
-        text-decoration: none;
-    
     }
 }
 
@@ -48,11 +38,7 @@
         }
     }
 
-    .tienda__categorias {
-        display: flex;
-        flex-direction: column;
-    }
-    .tienda__busqueda {
+    .tienda__categorias, .tienda__busqueda {
         display: flex;
         flex-direction: column;
     }
@@ -109,30 +95,13 @@
         }
     }
 
-    .tienda__hero {
+    .tienda__hero, .tienda__busqueda, .tienda__categorias {
         width: 100%;
         flex-direction: column;
         img {
             width: 100%;
         }
     }
-    
-    .tienda__busqueda {
-        width: 100%;
-        flex-direction: column;
-        img {
-            width: 100%;
-        }
-    }
-    
-    .tienda__categorias {
-        width: 100%;
-        flex-direction: column;
-        img {
-            width: 100%;
-        }
-    }
-
 }
 
 
@@ -146,7 +115,7 @@
         }
     }
     
-    .tienda__busqueda {
+    .tienda__busqueda, .tienda__categorias, .tienda__hero {
         width: 100%;
         img {
             width: 40rem;
@@ -157,30 +126,10 @@
             margin: 0 auto;
         }
     }
-    
-    .tienda__categorias {
-        width: 100%;
-        p {
-            width: 40rem;
-            margin: 0 auto;
-        }
-        img {
-            width: 40rem;
-            margin-left: calc(50% - 20rem);
-        }    
-    }    
-    
-    .tienda__hero {
-        width: 100%;
-        img {
-            width: 40rem;
-            margin-left: calc(50% - 20rem);   
-        }
-    }
 }    
 
 @media only screen and (min-width: 620px) {
-    .tienda__busqueda {
+    .tienda__busqueda, .tienda__categorias, .tienda__hero {
         align-items: center;
         flex-direction: row;
         img {
@@ -192,24 +141,9 @@
         }
     }
 
-    .tienda__categorias {
-        align-items: center;
-        flex-direction: row;
-        p {
-            margin: 0 auto;
-            width: 20rem;
-        }
-        img {
-            margin: 0 auto;
-        }
-    }
-
     .tienda__hero {
-        align-items: center;
-        flex-direction: row;
         img {
             order: 2;
-            margin: 0 auto;
         }
     }
     

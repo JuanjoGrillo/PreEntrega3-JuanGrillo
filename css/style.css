@@ -193,14 +193,8 @@ nav {
   margin: 2rem 0;
   box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.452);
   text-align: center; }
-  .section-title a {
+  .section-title a, .section-title a:hover, .section-title a:visited {
     font-size: 3rem;
-    color: white;
-    text-decoration: none; }
-  .section-title a:hover {
-    color: white;
-    text-decoration: none; }
-  .section-title a:visited {
     color: white;
     text-decoration: none; }
 
@@ -223,10 +217,7 @@ nav {
       margin-top: 0.4rem; }
     .tienda__hero div p:nth-of-type(3) {
       margin-bottom: 0; }
-  .tienda__categorias {
-    display: flex;
-    flex-direction: column; }
-  .tienda__busqueda {
+  .tienda__categorias, .tienda__busqueda {
     display: flex;
     flex-direction: column; } }
 
@@ -268,20 +259,10 @@ nav {
     margin-top: 10%; }
     .comentarios-container p {
       margin-top: 10%; }
-  .tienda__hero {
+  .tienda__hero, .tienda__busqueda, .tienda__categorias {
     width: 100%;
     flex-direction: column; }
-    .tienda__hero img {
-      width: 100%; }
-  .tienda__busqueda {
-    width: 100%;
-    flex-direction: column; }
-    .tienda__busqueda img {
-      width: 100%; }
-  .tienda__categorias {
-    width: 100%;
-    flex-direction: column; }
-    .tienda__categorias img {
+    .tienda__hero img, .tienda__busqueda img, .tienda__categorias img {
       width: 100%; } }
 
 @media only screen and (min-width: 450px) {
@@ -291,51 +272,26 @@ nav {
     margin-top: 10%; }
     .comentarios-container p {
       margin-top: 10%; }
-  .tienda__busqueda {
+  .tienda__hero, .tienda__busqueda, .tienda__categorias {
     width: 100%; }
-    .tienda__busqueda img {
+    .tienda__busqueda img, .tienda__categorias img, .tienda__hero img {
       width: 40rem;
       margin-left: calc(50% - 20rem); }
-    .tienda__busqueda p {
+    .tienda__busqueda p, .tienda__categorias p, .tienda__hero p {
       width: 40rem;
-      margin: 0 auto; }
-  .tienda__categorias {
-    width: 100%; }
-    .tienda__categorias p {
-      width: 40rem;
-      margin: 0 auto; }
-    .tienda__categorias img {
-      width: 40rem;
-      margin-left: calc(50% - 20rem); }
-  .tienda__hero {
-    width: 100%; }
-    .tienda__hero img {
-      width: 40rem;
-      margin-left: calc(50% - 20rem); } }
+      margin: 0 auto; } }
 
 @media only screen and (min-width: 620px) {
-  .tienda__busqueda {
+  .tienda__hero, .tienda__busqueda, .tienda__categorias {
     align-items: center;
     flex-direction: row; }
-    .tienda__busqueda img {
+    .tienda__busqueda img, .tienda__categorias img, .tienda__hero img {
       margin: 0 auto; }
-    .tienda__busqueda p {
+    .tienda__busqueda p, .tienda__categorias p, .tienda__hero p {
       margin: 0 auto;
       width: 20rem; }
-  .tienda__categorias {
-    align-items: center;
-    flex-direction: row; }
-    .tienda__categorias p {
-      margin: 0 auto;
-      width: 20rem; }
-    .tienda__categorias img {
-      margin: 0 auto; }
-  .tienda__hero {
-    align-items: center;
-    flex-direction: row; }
-    .tienda__hero img {
-      order: 2;
-      margin: 0 auto; }
+  .tienda__hero img {
+    order: 2; }
   .comentarios-container {
     position: initial;
     order: 1;
@@ -547,10 +503,9 @@ nav {
   margin-bottom: 3rem;
   margin-top: 5rem; }
   .ofertas-diarias * {
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .ofertas-diarias > p {
     text-decoration: underline;
-    font-size: 2rem;
     margin-bottom: 4rem; }
   .ofertas-diarias p {
     text-align: center; }
@@ -601,10 +556,9 @@ nav {
   flex-direction: column;
   align-items: center; }
   .ofertas-semanales * {
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .ofertas-semanales > p {
     text-decoration: underline;
-    font-size: 2rem;
     margin-bottom: 4rem; }
   .ofertas-semanales p {
     text-align: center; }
@@ -648,10 +602,9 @@ nav {
   flex-direction: column;
   align-items: center; }
   .ofertas-locales * {
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .ofertas-locales > p {
     text-decoration: underline;
-    font-size: 2rem;
     margin-bottom: 4rem; }
   .ofertas-locales__ofertas {
     display: flex;
@@ -687,23 +640,11 @@ nav {
     margin-bottom: 7rem; } }
 
 @media only screen and (min-width: 1024px) {
-  .ofertas-locales > p {
+  .ofertas-locales > p, .ofertas-semanales > p, .ofertas-diarias > p {
     text-decoration: underline;
     font-size: 3rem;
     margin-bottom: 4rem; }
-  .ofertas-semanales > p {
-    text-decoration: underline;
-    font-size: 3rem;
-    margin-bottom: 4rem; }
-  .ofertas-diarias > p {
-    text-decoration: underline;
-    font-size: 3rem;
-    margin-bottom: 4rem; }
-  .ofertas-locales * {
-    font-size: 2rem; }
-  .ofertas-semanales * {
-    font-size: 2rem; }
-  .ofertas-diarias * {
+  .ofertas-locales *, .ofertas-semanales *, .ofertas-diarias * {
     font-size: 2rem; } }
 
 main i {
@@ -747,23 +688,19 @@ main i {
 @media only screen and (min-width: 1024px) {
   .contenedor-informacion-registro {
     margin: 7rem 10%; }
-  .contenedor-informacion-registro__registro {
-    width: 50%; }
-  .contenedor-informacion-registro__informacion {
-    width: 50%; }
-  .contenedor-informacion-registro__informacion h2 {
-    font-size: 3rem;
-    text-decoration: underline;
-    margin-bottom: 3rem; }
-  .contenedor-informacion-registro__informacion p {
-    font-size: 2.3rem; }
-  .contenedor-informacion-registro__registro div button {
-    height: 3rem; }
-  .contenedor-informacion-registro__registro div input {
-    height: 3rem; }
-  .contenedor-informacion-registro__registro button {
-    font-size: 3rem;
-    width: fit-content; } }
+    .contenedor-informacion-registro__registro, .contenedor-informacion-registro__informacion {
+      width: 50%; }
+    .contenedor-informacion-registro__registro div button, .contenedor-informacion-registro__registro div input {
+      height: 3rem; }
+    .contenedor-informacion-registro__registro button {
+      font-size: 3rem;
+      width: fit-content; }
+    .contenedor-informacion-registro__informacion h2 {
+      font-size: 3rem;
+      text-decoration: underline;
+      margin-bottom: 3rem; }
+      .contenedor-informacion-registro__informacion h2 p {
+        font-size: 2.3rem; } }
 
 /* barra secundaria */
 .cuerpo-offcanvas p {
@@ -820,7 +757,7 @@ main i {
     justify-content: center; }
 
 .categoria-imagen-1 {
-  background-image: url("../assets/imgs/categoria.jpg"); }
+  background-image: url("../assets/imgs/categoria-1.jpg"); }
 
 .categoria-imagen-2 {
   background-image: url("../assets/imgs/categoria-2.jpg"); }

@@ -1,5 +1,4 @@
 /* barra secundaria */
-
 .cuerpo-offcanvas { 
     p {
         color: black;
@@ -60,7 +59,6 @@
 }
 
 /* categorias */
-
 .categorias {
     margin: 0 20px;
     h2 {
@@ -75,32 +73,11 @@
     }
 }
 
-.categoria-imagen {
-    &-1 {
+@each $numero in $numeros {
+    .categoria-imagen-#{$numero} {
         @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria.jpg") ;
+        background-image: url("../assets/imgs/categoria-#{$numero}.jpg");
     }
-    &-2 {
-        @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria-2.jpg") ;
-    }
-    &-3 {
-        @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria-3.jpg") ;
-    }
-    &-4 {
-        @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria-4.jpg") ;
-    }
-    &-5 {
-        @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria-5.jpg") ;
-    }
-    &-6 {
-        @extend %caja-de-categorias;
-        background-image: url("../assets/imgs/categoria-6.jpg") ;
-    }
-       
 }
 
 .tienda-contenedor {

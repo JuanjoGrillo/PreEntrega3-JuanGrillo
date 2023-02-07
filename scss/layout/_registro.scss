@@ -44,41 +44,29 @@
 
 }
 
-@media only screen and (min-width: 1024px){
-    
+@media only screen and (min-width: 1024px) {
     .contenedor-informacion-registro {
         margin: 7rem 10%;
+        &__registro, &__informacion {
+            width: 50%;
+        }
+        &__registro {
+            div button, div input {
+                height: 3rem;
+            }
+            button {
+                font-size: 3rem;
+                width: fit-content;
+            }
+        } 
+        &__informacion h2 {
+            font-size: 3rem;
+            text-decoration: underline;
+            margin-bottom: 3rem;
+            p {
+                font-size: 2.3rem;
+            }
+        }
     }
-    
-    .contenedor-informacion-registro__registro {
-        width: 50%;
-    }
-
-    .contenedor-informacion-registro__informacion {
-        width: 50%;
-    }
-    
-    .contenedor-informacion-registro__informacion h2 {
-        font-size: 3rem;
-        text-decoration: underline;
-        margin-bottom: 3rem;
-    }
-    
-    .contenedor-informacion-registro__informacion p {
-        font-size: 2.3rem;
-    }
-
-    .contenedor-informacion-registro__registro div button {
-        height: 3rem;
-    }
-
-    .contenedor-informacion-registro__registro div input {
-        height: 3rem;
-    }
-
-    .contenedor-informacion-registro__registro button {
-        font-size: 3rem;
-        width: fit-content;
-    }
-
 }
+
