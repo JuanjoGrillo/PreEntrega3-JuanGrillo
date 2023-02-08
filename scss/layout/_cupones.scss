@@ -3,7 +3,6 @@
     margin-bottom: 5rem;
     
     h2 {
-        text-decoration: underline;
         text-align: center;
         margin-bottom: 3rem;
         margin-top: 3rem;
@@ -21,19 +20,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    
-    p {
-        text-align: center;
+    width: 80%;
+    & > p{
+        margin-bottom: 3rem;
     }
+    img {
+        margin-bottom: 2rem;
+    }
+   
 }
 
 .contenedor-puntos__compra-img {
-    background-color: red;
+    background-color: $bg-rojo;
     padding: 1rem;
     color: white;
     border-radius: 1rem;
-    
+    margin-bottom: 2rem;
     p {
         width: fit-content;
     }
@@ -43,11 +45,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
-
+    & > p{
+        margin-bottom: 3rem;
+    }
     p {
         text-align: center;
+        margin-bottom: 3rem;
     }
+  
 }
 
 .contenedor-cupones {
@@ -56,9 +61,10 @@
     align-items: center;
 
     p {
-        max-width: 300px;
         text-align: center;
+        margin-bottom: 3rem;
     }
+
 }
 
 .contenedor-cupones__cupones {
@@ -68,7 +74,7 @@
     
     img {
         border-radius: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -103,22 +109,24 @@
     }
 }
 
-.contenedor-puntos-cupones__cupones {
-    margin-bottom: 5rem;
-    
+.contenedor-puntos__cupones {    
     h2 {
-        text-decoration: underline;
         text-align: center;
         margin-bottom: 6rem;
     }
+    .contenedor-cupones {
+        p {
+            width: 100%;
+        }
+    }
 }
+
 
 .usuario-puntos-img {
     border-radius: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
-
     .contenedor-puntos {
         flex-direction: row;
         justify-content: center;
@@ -126,6 +134,9 @@
         &__compra {
             flex-direction: row;
             margin-right: 2.5%;
+            p {
+                text-align: left;
+            }
         }
         
         &__usuario {

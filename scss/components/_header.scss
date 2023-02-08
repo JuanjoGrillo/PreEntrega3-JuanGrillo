@@ -1,7 +1,8 @@
 header {
-    background-color: red;
+    background-color: $bg-rojo-fuerte;
     padding-bottom: 2rem;
     box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.452);
+    margin-bottom: 5rem;
 }
 
 nav {
@@ -58,30 +59,24 @@ nav {
     }
 }
 
-@media only screen and (min-width: 780px) {
-    
-    .nav-opciones li a {
-        font-size: 2rem;
-    }
-    
-}
-
 .nav-opciones-a-1 {
     @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 3500ms);
+    padding: 0;
 }
 
 .nav-opciones-a-2 {
     @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 4000ms);
-    
+    padding: 0;
 }
 
 .nav-opciones-a-3 {
     @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 4500ms);
-    
+    padding: 0;
 }
 
 .nav-opciones-a-4 {
     @include agregarAnimacion(deslizarHaciaAbajo, 0ms, 1, 5000ms);
+    padding: 0;
 }
 
 
@@ -145,8 +140,6 @@ nav {
 
     & li a {
         margin-top: 10px;
-        font-weight: bold;
-        font-size: 1.6rem;
     }
 }
 

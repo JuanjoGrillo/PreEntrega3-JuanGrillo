@@ -1,18 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Shrikhand&display=swap");
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: initial;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; }
+html {
+  font-size: 10px; }
+
+h1, h1 * {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.4rem; }
+
+h2, h2 * {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.2rem; }
+
+h3, h3 * {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem; }
+
+h4, h4 * {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem; }
+
+h5, h5 * {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.7rem; }
+
+@media only screen and (min-width: 500px) {
+  * {
+    font-size: 1.8rem; }
+  h1, h1 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.6rem; }
+  h2, h2 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.4rem; }
+  h3, h3 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.2rem; }
+  h4, h4 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2rem; }
+  h5, h5 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.9rem; } }
+
+@media only screen and (min-width: 700px) {
+  * {
+    font-size: 2.2rem; }
+  h1, h1 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3rem; }
+  h2, h2 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.8rem; }
+  h3, h3 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.6rem; }
+  h4, h4 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.4rem; }
+  h5, h5 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.3rem; } }
+
+@media only screen and (min-width: 900px) {
+  * {
+    font-size: 2.4rem; }
+  h1, h1 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.2rem; }
+  h2, h2 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3rem; }
+  h3, h3 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.8rem; }
+  h4, h4 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.6rem; }
+  h5, h5 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  * {
+    font-size: 2.8rem; }
+  h1, h1 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.6rem; }
+  h2, h2 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.4rem; }
+  h3, h3 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.2rem; }
+  h4, h4 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 3rem; }
+  h5, h5 * {
+    font-family: "Shrikhand", cursive;
+    font-size: 2.9rem; } }
 
 @keyframes mostrarYEsconder {
   0% {
@@ -43,17 +134,14 @@ h6 {
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 1, 44, 0.753);
+  background-color: #8D99AE;
   color: white;
   height: fit-content;
   margin-top: 5rem; }
   footer p:nth-of-type(1) {
-    font-size: 2rem;
     margin-left: 0.5rem;
-    font-style: italic;
     line-height: 4rem; }
   footer p:nth-of-type(2) {
-    font-size: 2rem;
     line-height: 4rem;
     margin-right: 0.5rem; }
 
@@ -65,9 +153,10 @@ footer {
     align-items: center; } }
 
 header {
-  background-color: red;
+  background-color: #D80032;
   padding-bottom: 2rem;
-  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.452); }
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.452);
+  margin-bottom: 5rem; }
 
 nav {
   display: flex;
@@ -109,33 +198,33 @@ nav {
     color: white;
     text-decoration: none; }
 
-@media only screen and (min-width: 780px) {
-  .nav-opciones li a {
-    font-size: 2rem; } }
-
 .nav-opciones-a-1, .boton-navbar {
   animation-name: deslizarHaciaAbajo;
   animation-delay: 0ms;
   animation-iteration-count: 1;
-  animation-duration: 3500ms; }
+  animation-duration: 3500ms;
+  padding: 0; }
 
 .nav-opciones-a-2 {
   animation-name: deslizarHaciaAbajo;
   animation-delay: 0ms;
   animation-iteration-count: 1;
-  animation-duration: 4000ms; }
+  animation-duration: 4000ms;
+  padding: 0; }
 
 .nav-opciones-a-3 {
   animation-name: deslizarHaciaAbajo;
   animation-delay: 0ms;
   animation-iteration-count: 1;
-  animation-duration: 4500ms; }
+  animation-duration: 4500ms;
+  padding: 0; }
 
 .nav-opciones-a-4 {
   animation-name: deslizarHaciaAbajo;
   animation-delay: 0ms;
   animation-iteration-count: 1;
-  animation-duration: 5000ms; }
+  animation-duration: 5000ms;
+  padding: 0; }
 
 .boton-navbar {
   margin-top: 2rem;
@@ -177,9 +266,7 @@ nav {
   text-align: center;
   margin-top: 200px; }
   .boton-navbar__opciones li a {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.6rem; }
+    margin-top: 10px; }
 
 @media only screen and (min-width: 600px) {
   .boton-usuario {
@@ -194,14 +281,11 @@ nav {
   box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.452);
   text-align: center; }
   .section-title a, .section-title a:hover, .section-title a:visited {
-    font-size: 3rem;
     color: white;
     text-decoration: none; }
 
 .busqueda_tienda_titulo {
-  margin: 2rem auto;
-  font-size: 2rem;
-  text-decoration: underline; }
+  margin: 2rem auto; }
 
 .tienda h3 {
   text-align: center; }
@@ -225,20 +309,20 @@ nav {
   margin-bottom: 2rem; }
 
 .tienda__busqueda {
-  font-size: 1.6rem;
   display: flex; }
   .tienda__busqueda img {
     margin-bottom: 1rem;
     width: 100%;
     height: 25rem; }
   .tienda__busqueda p {
-    width: 40%; }
+    width: 90%;
+    margin: 0 auto; }
 
 .tienda__categorias {
-  font-size: 1.6rem;
   display: flex; }
   .tienda__categorias p {
-    width: 40%; }
+    width: 90%;
+    margin: 0 auto; }
   .tienda__categorias img {
     margin-bottom: 1rem;
     order: 3;
@@ -246,63 +330,70 @@ nav {
     height: 25rem; }
 
 .tienda__hero {
-  font-size: 1.6rem;
   display: flex; }
   .tienda__hero img {
     width: 100%;
     height: 25rem; }
 
+.comentarios-container p {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0 0.5rem; }
+
 @media only screen and (min-width: 320px) {
   .comentarios-container {
     position: absolute;
-    margin-left: 0;
-    margin-top: 10%; }
+    margin-top: 5%;
+    width: 100%; }
     .comentarios-container p {
-      margin-top: 10%; }
+      width: 80%;
+      margin-top: 5%;
+      margin-left: 10%; }
   .tienda__hero, .tienda__busqueda, .tienda__categorias {
     width: 100%;
     flex-direction: column; }
     .tienda__hero img, .tienda__busqueda img, .tienda__categorias img {
-      width: 100%; } }
+      width: 80%;
+      margin-left: 10%; } }
 
 @media only screen and (min-width: 450px) {
-  .comentarios-container {
-    position: absolute;
-    margin-left: calc(50% - 20rem);
-    margin-top: 10%; }
-    .comentarios-container p {
-      margin-top: 10%; }
   .tienda__hero, .tienda__busqueda, .tienda__categorias {
     width: 100%; }
     .tienda__busqueda img, .tienda__categorias img, .tienda__hero img {
-      width: 40rem;
-      margin-left: calc(50% - 20rem); }
-    .tienda__busqueda p, .tienda__categorias p, .tienda__hero p {
-      width: 40rem;
-      margin: 0 auto; } }
+      width: 90%;
+      margin-left: 5%; }
+  .comentarios-container {
+    width: 100%; }
+    .comentarios-container p {
+      margin-top: 5%;
+      width: 90%;
+      margin-left: 5%; } }
 
 @media only screen and (min-width: 620px) {
   .tienda__hero, .tienda__busqueda, .tienda__categorias {
     align-items: center;
     flex-direction: row; }
     .tienda__busqueda img, .tienda__categorias img, .tienda__hero img {
-      margin: 0 auto; }
+      margin: 0 4rem;
+      width: 50%;
+      height: 30vw; }
     .tienda__busqueda p, .tienda__categorias p, .tienda__hero p {
       margin: 0 auto;
-      width: 20rem; }
+      width: 40%; }
   .tienda__hero img {
     order: 2; }
   .comentarios-container {
     position: initial;
     order: 1;
-    margin: 0 auto; } }
-
-@media only screen and (min-width: 320px) and (max-width: 619px) {
-  .comentarios-container p {
-    background-color: rgba(255, 255, 255, 0.493);
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    padding: 0 0.5rem; } }
+    margin: 0 auto; }
+    .comentarios-container p {
+      width: 80%; }
+  .tienda__busqueda p {
+    width: 70%;
+    margin-right: 4rem; }
+  .tienda__categorias p {
+    width: 70%;
+    margin-left: 4rem; } }
 
 @media only screen and (min-width: 1024px) {
   .contenedor-puntos-cupones__cupones {
@@ -328,13 +419,28 @@ nav {
 .titulo-de-registro {
   background-color: rgba(255, 107, 230, 0.877); }
 
+body {
+  background-color: #EDF2F4; }
+
 .contacto-redes__redes {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .contacto-redes__redes div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2D42;
+    border-radius: 100%;
+    padding: 3rem;
+    color: white; }
+    .contacto-redes__redes div a {
+      margin-bottom: 2rem; }
+      .contacto-redes__redes div a img {
+        height: 10rem; }
 
 .titulo-mensaje-mail {
-  font-size: 2rem;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 3rem; }
@@ -355,23 +461,24 @@ nav {
   width: 100%;
   max-width: 36rem;
   margin: 0 auto; }
+  .formulario-mail input {
+    height: 4rem; }
   .formulario-mail button {
-    width: 30%;
-    font-size: 2rem;
+    font-size: inherit;
+    width: 35%;
     margin: 0 auto; }
+  .formulario-mail textarea {
+    height: 8rem; }
 
-.contacto-redes h2 {
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem; }
+.contacto-redes {
+  margin-bottom: 5rem; }
+  .contacto-redes h2 {
+    text-align: center;
+    margin-bottom: 3rem; }
 
 @media only screen and (min-width: 600px) {
-  .titulo-mensaje-mail {
-    font-size: 3rem; }
   .texto-formulario-mail p {
-    text-align: initial;
-    font-size: 2rem; } }
+    text-align: initial; } }
 
 @media only screen and (min-width: 600px) {
   .contacto-redes__redes {
@@ -381,8 +488,6 @@ nav {
   .contacto-mensaje-mail {
     flex-direction: row;
     margin: 0 10%; }
-  .texto-formulario-mail {
-    align-self: center; }
   .formulario-mail {
     margin-left: 10%; } }
 
@@ -390,7 +495,6 @@ nav {
   margin-left: 3rem;
   margin-bottom: 5rem; }
   .contenedor-puntos-cupones__puntos h2 {
-    text-decoration: underline;
     text-align: center;
     margin-bottom: 3rem;
     margin-top: 3rem; }
@@ -406,33 +510,38 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%; }
-  .contenedor-puntos__compra p {
-    text-align: center; }
+  width: 80%; }
+  .contenedor-puntos__compra > p {
+    margin-bottom: 3rem; }
+  .contenedor-puntos__compra img {
+    margin-bottom: 2rem; }
 
 .contenedor-puntos__compra-img {
-  background-color: red;
+  background-color: #EF233C;
   padding: 1rem;
   color: white;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  margin-bottom: 2rem; }
   .contenedor-puntos__compra-img p {
     width: fit-content; }
 
 .contenedor-puntos__usuario {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 300px; }
+  align-items: center; }
+  .contenedor-puntos__usuario > p {
+    margin-bottom: 3rem; }
   .contenedor-puntos__usuario p {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 3rem; }
 
 .contenedor-cupones {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contenedor-cupones p {
-    max-width: 300px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 3rem; }
 
 .contenedor-cupones__cupones {
   display: flex;
@@ -440,7 +549,7 @@ nav {
   align-items: center; }
   .contenedor-cupones__cupones img {
     border-radius: 1rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 3rem; }
 
 .cupon-numero-3 {
   position: relative; }
@@ -466,12 +575,12 @@ nav {
   .contenedor-puntos__puntos h2 {
     text-align: center; }
 
-.contenedor-puntos-cupones__cupones {
-  margin-bottom: 5rem; }
-  .contenedor-puntos-cupones__cupones h2 {
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 6rem; }
+.contenedor-puntos__cupones h2 {
+  text-align: center;
+  margin-bottom: 6rem; }
+
+.contenedor-puntos__cupones .contenedor-cupones p {
+  width: 100%; }
 
 .usuario-puntos-img {
   border-radius: 1rem; }
@@ -483,6 +592,8 @@ nav {
     .contenedor-puntos__compra {
       flex-direction: row;
       margin-right: 2.5%; }
+      .contenedor-puntos__compra p {
+        text-align: left; }
     .contenedor-puntos__usuario {
       margin-left: 2.5%; }
   .contenedor-cupones__cupones {
@@ -500,28 +611,24 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 5rem; }
-  .ofertas-diarias * {
-    font-size: 2rem; }
-  .ofertas-diarias > p {
-    text-decoration: underline;
+  margin: 5rem 2rem 3rem; }
+  .ofertas-diarias h3 {
     margin-bottom: 4rem; }
-  .ofertas-diarias p {
-    text-align: center; }
   .ofertas-diarias__ofertas {
     display: flex;
     flex-direction: column;
     align-items: center; }
-
-.ofertas-diarias__oferta {
-  align-items: center;
-  justify-content: center; }
-  .ofertas-diarias__oferta p {
-    margin: 1rem 10%;
-    text-align: center; }
-  .ofertas-diarias__oferta:nth-last-of-type(2) p {
-    order: 2; }
+  .ofertas-diarias__oferta {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .ofertas-diarias__oferta i {
+      margin-bottom: 3rem; }
+    .ofertas-diarias__oferta p {
+      margin: 1rem 10%;
+      text-align: center; }
+    .ofertas-diarias__oferta:nth-last-of-type(2) p {
+      order: 2; }
 
 .oferta-diaria-extra {
   display: none; }
@@ -554,22 +661,22 @@ nav {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .ofertas-semanales * {
-    font-size: 2rem; }
-  .ofertas-semanales > p {
-    text-decoration: underline;
+  align-items: center;
+  margin: 5rem 2rem 3rem; }
+  .ofertas-semanales h3 {
     margin-bottom: 4rem; }
-  .ofertas-semanales p {
-    text-align: center; }
   .ofertas-semanales__ofertas {
     display: flex;
     flex-direction: column; }
   .ofertas-semanales__oferta {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-around; }
+    .ofertas-semanales__oferta i {
+      margin-bottom: 3rem; }
     .ofertas-semanales__oferta p {
-      text-align: center; }
+      text-align: center;
+      width: 70%; }
 
 .oferta-semanal-extra {
   display: none; }
@@ -600,20 +707,21 @@ nav {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .ofertas-locales * {
-    font-size: 2rem; }
-  .ofertas-locales > p {
-    text-decoration: underline;
-    margin-bottom: 4rem; }
+  align-items: center;
+  margin: 5rem 2rem 3rem; }
+  .ofertas-locales h3 {
+    margin-bottom: 4rem;
+    text-align: center; }
   .ofertas-locales__ofertas {
     display: flex;
     flex-direction: column; }
   .ofertas-locales__oferta {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: 0 2rem 3rem; }
   .ofertas-locales i {
+    margin-bottom: 3rem;
     width: 50%; }
   .ofertas-locales p {
     text-align: center; }
@@ -642,10 +750,7 @@ nav {
 @media only screen and (min-width: 1024px) {
   .ofertas-locales > p, .ofertas-semanales > p, .ofertas-diarias > p {
     text-decoration: underline;
-    font-size: 3rem;
-    margin-bottom: 4rem; }
-  .ofertas-locales *, .ofertas-semanales *, .ofertas-diarias * {
-    font-size: 2rem; } }
+    margin-bottom: 4rem; } }
 
 main i {
   margin: 1rem;
@@ -663,12 +768,11 @@ main i {
     display: flex;
     flex-direction: column; }
     .contenedor-informacion-registro__registro button {
-      font-size: 2rem;
-      width: 30%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: inherit;
+      width: 45%; }
   .contenedor-informacion-registro__informacion h2 {
     text-decoration: underline;
-    font-size: 2rem;
     margin-bottom: 2rem; }
   .contenedor-informacion-registro__informacion p {
     margin-bottom: 2rem; }
@@ -692,15 +796,12 @@ main i {
       width: 50%; }
     .contenedor-informacion-registro__registro div button, .contenedor-informacion-registro__registro div input {
       height: 3rem; }
-    .contenedor-informacion-registro__registro button {
-      font-size: 3rem;
-      width: fit-content; }
     .contenedor-informacion-registro__informacion h2 {
-      font-size: 3rem;
       text-decoration: underline;
-      margin-bottom: 3rem; }
-      .contenedor-informacion-registro__informacion h2 p {
-        font-size: 2.3rem; } }
+      margin-bottom: 3rem; } }
+
+header {
+  margin-bottom: 0; }
 
 /* barra secundaria */
 .cuerpo-offcanvas p {
@@ -715,10 +816,10 @@ main i {
 .contenedor-barra-secundaria {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  background-color: rgba(39, 39, 39, 0.726); }
+  background-color: rgba(39, 39, 39, 0.726);
+  height: fit-content;
+  justify-content: space-around !important; }
   .contenedor-barra-secundaria * {
-    font-size: 1.6rem;
     color: white;
     align-items: center; }
   .contenedor-barra-secundaria__carrito {
@@ -730,6 +831,8 @@ main i {
     display: flex; }
     .contenedor-barra-secundaria__index > * {
       margin: 5px; }
+  .contenedor-barra-secundaria form input, .contenedor-barra-secundaria form button {
+    height: 3rem; }
 
 @media only screen and (max-width: 320px) {
   .contenedor-barra-secundaria {
@@ -740,10 +843,6 @@ main i {
 @media only screen and (max-width: 600px) {
   .contenedor-barra-secundaria__index {
     display: none; } }
-
-@media only screen and (min-width: 1024px) {
-  .contenedor-barra-secundaria * {
-    font-size: 2rem; } }
 
 /* categorias */
 .categorias {
@@ -859,29 +958,21 @@ article img {
       background-color: rgba(0, 0, 0, 0.632);
       color: white;
       padding: 0.4rem;
-      border-radius: 0.4rem;
-      font-size: 1.6rem; }
+      border-radius: 0.4rem; }
     .tienda-contenedor__item-contenedor-2 img {
       height: 150px; }
-    .tienda-contenedor__item-contenedor-2__info {
-      height: 184px;
-      font-size: 1.6rem; }
-      .tienda-contenedor__item-contenedor-2__info a {
-        display: block;
-        width: fit-content;
-        margin: 0 auto;
-        font-size: 1.6rem; }
+    .tienda-contenedor__item-contenedor-2__info button {
+      width: 100%;
+      height: 3.6rem;
+      font-size: inherit;
+      line-height: 100%; }
 
 .contenedor-compra-realizada-puntos img {
   width: 100%; }
 
 .contenedor-compra-realizada-puntos p {
-  font-size: 2rem;
   color: red;
   text-align: center; }
-
-.compra-realizada-texto {
-  font-size: 2rem; }
 
 /* combos */
 .tienda-combos-contenedor {
@@ -926,17 +1017,12 @@ article img {
   max-width: 50px;
   max-height: 50px; }
 
-.precio {
-  font-size: 1.6rem; }
-
 @media only screen and (min-width: 700px) {
   .tienda-combos-contenedor__combo {
     flex-direction: row;
     justify-content: center; }
   .comida {
-    margin: 1rem 2rem; }
-  .precio {
-    font-size: 2rem; } }
+    margin: 1rem 2rem; } }
 
 @media only screen and (min-width: 1024px) {
   .tienda-combos-contenedor {
@@ -944,25 +1030,21 @@ article img {
 
 /* titulos de secciones */
 .categorias h2 {
-  font-size: 3rem;
   text-decoration: underline;
   width: fit-content;
   margin: 2.5rem auto 5rem; }
 
 .tienda__combos-titulo {
-  font-size: 3rem;
   text-decoration: underline;
   width: fit-content;
   margin: 2.5rem auto 5rem; }
 
 .tienda__comidas-titulo {
-  font-size: 3rem;
   text-decoration: underline;
   width: fit-content;
   margin: 2.5rem auto 5rem; }
 
 .tienda__locales-titulo {
-  font-size: 3rem;
   text-decoration: underline;
   width: fit-content;
   margin: 2.5rem auto 5rem; }

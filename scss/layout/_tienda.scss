@@ -1,3 +1,6 @@
+header {
+    margin-bottom: 0;
+}
 /* barra secundaria */
 .cuerpo-offcanvas { 
     p {
@@ -14,10 +17,11 @@
 .contenedor-barra-secundaria {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    // padding: 10px 20px;
     background-color: rgba(39, 39, 39, 0.726);
+    height: fit-content;
+    justify-content: space-around !important;
     * {
-        font-size: 1.6rem;
         color: white;
         align-items: center;
     }
@@ -34,10 +38,12 @@
             margin: 5px;
         }
     } 
+    form input, form button {
+        height: 3rem;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-    
     .contenedor-barra-secundaria {
         flex-direction: column;
         &__carrito {
@@ -51,12 +57,6 @@
         display: none;
     }
 } 
-
-@media only screen and (min-width: 1024px) {
-    .contenedor-barra-secundaria * {
-        font-size: 2rem;
-    }
-}
 
 /* categorias */
 .categorias {
@@ -188,20 +188,16 @@ article img {
             color: white;
             padding: 0.4rem;
             border-radius: 0.4rem;
-            font-size: 1.6rem;
         }
         img {
             height: 150px;
         }
         &__info {
-            height: 184px;
-            font-size: 1.6rem;
-            a {
-                display: block;
-                width: fit-content;
-                margin: 0 auto;
-                font-size: 1.6rem;
-            
+            button {
+                width: 100%;
+                height: 3.6rem;
+                font-size: inherit;
+                line-height: 100%;
             }
         }
     }
@@ -212,15 +208,10 @@ article img {
         width: 100%;
     }
     p {
-        font-size: 2rem;
         color: red;
         text-align: center;
     }   
 } 
-
-.compra-realizada-texto {
-    font-size: 2rem;
-}
 
 /* combos */
 
@@ -276,10 +267,6 @@ article img {
     max-height: 50px;
 }
 
-.precio {
-    font-size: 1.6rem;
-}
-
 @media only screen and (min-width: 700px) {
     
     .tienda-combos-contenedor__combo {
@@ -289,10 +276,6 @@ article img {
 
     .comida { 
         margin: 1rem 2rem;
-    }
-
-    .precio {
-        font-size: 2rem;
     }
 }
 
@@ -305,21 +288,18 @@ article img {
 /* titulos de secciones */
 
 .categorias h2 {
-    font-size: 3rem;
     text-decoration: underline;
     width: fit-content;
     margin: 2.5rem auto 5rem;
 }  
 
 .tienda__combos-titulo {
-    font-size: 3rem;
     text-decoration: underline;
     width: fit-content;
     margin: 2.5rem auto 5rem;
 
 }
 .tienda__comidas-titulo {
-    font-size: 3rem;
     text-decoration: underline;
     width: fit-content;
     margin: 2.5rem auto 5rem;
@@ -327,7 +307,6 @@ article img {
 }
 
 .tienda__locales-titulo {
-    font-size: 3rem;
     text-decoration: underline;
     width: fit-content;
     margin: 2.5rem auto 5rem;
